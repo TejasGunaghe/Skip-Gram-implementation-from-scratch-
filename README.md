@@ -75,5 +75,10 @@ Following set of code can be used to get the predicted context words:
 5.	Cosine -Similarity functions:
  
 
-6.	Inter and Intra cluster distances:
+6.	Inter and Intra cluster distances and DB index:
+ 
+
+Credits: 
+1.	IIT Bombay course material for CS772: DL for NLP
+2.	https://www.geeksforgeeks.org
 
