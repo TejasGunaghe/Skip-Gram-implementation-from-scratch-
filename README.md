@@ -29,54 +29,6 @@ Model Tuning Parameters:
 Note: Tuning can be done inside the skipgram class in code.
 
 
-Running the skip gram model: (Details are provided in section Code Details)
-Step1: Import/Upload the Corpus.txt file attached with code files in the python notebook.
-Step2: Perform all steps (code lines). Run all lines of the code
-Step3: Get the output in “predict context” section of the code.
-Step4: Get cosine similarity & inter and intra cluster distances
-
-Code Details:
-1.	Corpus.txt: 1724 sentences
-The word corpus is taken from Lextutorusing’ the Wikipedia corpus. Collected 25-30 sentences for each of the animal and bird words from the concordancer and the Input corpus is in the form of txt file named “cluster.txt”. This corpus is used to train the model. This file includes 1724 sentences for all words.
-
-2.	Data Preprocessing and encoding:
-The corpus sentences are converted to corpus set by performing following actions:
-1.	Removing Punctuations
-2.	Remove spaces
-3.	Convert the corpus to lower case.
-4.	One hot encoding for input as well as context (output array)
-5.	Context window size considered: -2 words and +2 words
-
-3.	Skipgram Object (model): 
-The skipgram object includes following set of function/parameters listed below:
-
-2.1.	Activation function: SoftMax 
- 
-
-2.2.	Loss Function: Negative log likelihood loss function
-  
-
-2.3.	 Learning Rate: Adaptive starting from 0.001
- 
-
-2.4.	Initializing weights: weights are initialized with random numbers from -0.8 to 0.8
-
- 
-2.5.	Train Function: This function includes the neural network codes like feedforward and backpropagation algorithm. 
- 
-
-4.	Predicting context words: predict function can be used to predict the context
- 
-
-Following set of code can be used to get the predicted context words:
- 
- 
-
-5.	Cosine -Similarity functions:
- 
-
-6.	Inter and Intra cluster distances and DB index:
- 
 
 Credits: 
 1.	IIT Bombay course material for CS772: DL for NLP
